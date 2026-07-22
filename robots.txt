@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ssangkalweb.github.io/ssangkal-archive/sitemap.xml

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="쌍칼 아카이브 SK 기록 표식">
+  <rect width="64" height="64" rx="8" fill="#0a111b"/>
+  <rect x="13" y="13" width="38" height="38" rx="2" fill="none" stroke="#bca36b" stroke-width="3" transform="rotate(45 32 32)"/>
+  <text x="32" y="38" fill="#eee9dd" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">SK</text>
+</svg>
