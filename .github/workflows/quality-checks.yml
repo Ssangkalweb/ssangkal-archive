@@ -1,0 +1,33 @@
+name: Quality checks
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  static-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Python 설정
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: 정적 사이트 검사
+        run: python .github/scripts/validate_static_site.py
+
+      - name: JavaScript 문법 검사
+        run: node --check script.js
+
+      - name: 공백 오류 검사
+        run: git diff --check HEAD^ HEAD
