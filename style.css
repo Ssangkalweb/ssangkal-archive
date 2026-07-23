@@ -10,6 +10,7 @@ h1,h2,h3,p{margin-top:0}
 h1,h2,h3{line-height:1.16;text-wrap:balance}
 .skip-link{position:fixed;z-index:1000;top:0;left:max(.5rem,env(safe-area-inset-left));max-width:calc(100vw - 1rem);padding:.7rem 1rem;background:var(--paper);color:var(--ink);transform:translateY(calc(-100% - .5rem))}
 .skip-link:focus{top:.5rem;transform:translateY(0)}
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}
 :focus-visible{outline:3px solid var(--gold);outline-offset:3px}
 .hero,.archive-portal,#life,#knowledge,#fiction,#build,#square,#about{scroll-margin-top:var(--anchor-offset)}
 
