@@ -87,7 +87,10 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .record-panel{min-height:21rem;padding-block:2rem;border-bottom:1px solid var(--line);display:grid;gap:2rem}
 .record-index{color:var(--gold);font:700 .72rem/1 monospace;letter-spacing:.12em}
 .record-content h2{margin-bottom:1rem;font-size:clamp(1.8rem,4vw,3rem);letter-spacing:-.035em}
-.record-content>p:last-child{max-width:42rem;color:var(--muted)}
+.record-content>p:not(.eyebrow){max-width:42rem;color:var(--muted)}
+.record-actions{max-width:42rem;margin-top:1.4rem;display:flex;flex-wrap:wrap;gap:.65rem}
+.record-actions a{min-height:2.75rem;padding:.7rem 1rem;border:1px solid var(--line);display:inline-flex;align-items:center;justify-content:space-between;gap:1rem;color:var(--paper);font-size:.78rem;font-weight:750}
+.record-actions a:hover{border-color:var(--gold);color:var(--gold)}
 .record-state{align-self:end;display:grid;gap:.7rem}
 .record-state strong,.about-state strong{font-size:.85rem}
 .record-state small,.about-state small{color:#7f8992;font:.62rem/1.4 monospace;letter-spacing:.08em}
@@ -105,6 +108,9 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .square-state>span{margin-right:.6rem;color:var(--red);font-size:.55rem}
 .square-state strong{color:var(--gold);font-size:.67rem;letter-spacing:.12em}
 .square-state p{margin:.8rem 0 0;font-size:1.15rem;font-weight:700}
+.square-links{margin-top:1rem;display:flex;flex-wrap:wrap;gap:.55rem}
+.square-links a{min-height:2.75rem;padding:.65rem .9rem;border:1px solid var(--line);display:inline-flex;align-items:center;gap:.8rem;color:var(--paper);font-size:.75rem;font-weight:750}
+.square-links a:hover{border-color:var(--red);color:var(--white)}
 
 .about{display:grid;gap:2rem;background:var(--paper);color:var(--ink)}
 .about-label>span{color:#67625a;font:.62rem/1 monospace;letter-spacing:.1em}
