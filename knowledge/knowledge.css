@@ -68,3 +68,115 @@
     line-height: 1.18;
   }
 }
+
+/* 대표 콘텐츠 미리보기 */
+.featured-card > .featured-media {
+  position: relative;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  margin: 1.4rem 0 1.6rem;
+  padding: 0;
+  border: 1px solid #c9c7c1;
+  display: block;
+  overflow: hidden;
+  background: #0a0f17;
+  color: #fff;
+  isolation: isolate;
+}
+
+.featured-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, transparent 45%, #05080da8);
+  pointer-events: none;
+}
+
+.featured-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 180ms ease, filter 180ms ease;
+}
+
+.featured-media-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #ffffffb5;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #0a0f17d9;
+  color: #fff;
+  font: 800 0.9rem/1 Arial, sans-serif;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.5rem 1.5rem #0008;
+}
+
+.featured-card > .featured-media:hover {
+  border-color: var(--accent);
+  text-decoration: none;
+}
+
+.featured-media:hover img {
+  filter: contrast(1.04);
+  transform: scale(1.045);
+}
+
+.featured-media:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.featured-media-article {
+  background:
+    radial-gradient(circle at 72% 48%, transparent 0 17%, #45b98645 17.5% 18%, transparent 18.5% 30%, #45b9862e 30.5% 31%, transparent 31.5%),
+    linear-gradient(135deg, #101923, #080d14);
+}
+
+.featured-media-article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(#ffffff0b 1px, transparent 1px),
+    linear-gradient(90deg, #ffffff0b 1px, transparent 1px);
+  background-size: 2rem 2rem;
+}
+
+.featured-media-rings {
+  position: absolute;
+  right: 13%;
+  top: 50%;
+  z-index: 1;
+  width: 0.6rem;
+  height: 0.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 1rem var(--accent);
+  transform: translateY(-50%);
+}
+
+.featured-media-read {
+  position: absolute;
+  left: 1.2rem;
+  bottom: 1rem;
+  z-index: 2;
+  color: #fff;
+  font: 800 0.72rem/1 Arial, sans-serif;
+  letter-spacing: 0.18em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .featured-media img {
+    transition: none;
+  }
+}
