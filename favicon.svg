@@ -1,5 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="쌍칼 아카이브 SK 기록 표식">
-  <rect width="64" height="64" rx="8" fill="#0a111b"/>
-  <rect x="13" y="13" width="38" height="38" rx="2" fill="none" stroke="#bca36b" stroke-width="3" transform="rotate(45 32 32)"/>
-  <text x="32" y="38" fill="#eee9dd" font-family="Arial, sans-serif" font-size="17" font-weight="700" text-anchor="middle">SK</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 88" role="img" aria-label="쌍칼 아카이브 SK 방패 마크">
+  <defs>
+    <linearGradient id="body" x1="13" y1="9" x2="67" y2="78" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182637"/>
+      <stop offset=".52" stop-color="#0b141f"/>
+      <stop offset="1" stop-color="#060b12"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="10" y1="12" x2="70" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f5efe2"/>
+      <stop offset=".45" stop-color="#d9ba6c"/>
+      <stop offset="1" stop-color="#8da8b5"/>
+    </linearGradient>
+  </defs>
+  <path d="M40 1.5 76 14v34.5L67 70 40 87 13 70 4 48.5V14L40 1.5Z" fill="#04080e"/>
+  <path d="M40 5.5 72 16.6v31.1L63.7 67 40 81.9 16.3 67 8 47.7V16.6L40 5.5Z" fill="url(#body)" stroke="url(#edge)" stroke-width="2.2" stroke-linejoin="miter"/>
+  <path d="M40 10.4 67.5 19.9v26.9l-7.3 16.9L40 76.4 19.8 63.7l-7.3-16.9V19.9L40 10.4Z" fill="none" stroke="#8ea5b1" stroke-opacity=".46" stroke-width="1.2" stroke-linejoin="miter"/>
+  <g fill="none" stroke-linecap="butt" stroke-linejoin="bevel">
+    <path d="M38 23H21l-4 4v9l4 4h13l4 4v11l-4 4H17" stroke="#050910" stroke-width="10"/>
+    <path d="M43 23v36M61 23 43 41l18 18" stroke="#050910" stroke-width="10"/>
+    <path d="M38 23H21l-4 4v9l4 4h13l4 4v11l-4 4H17" stroke="#f4efe4" stroke-width="6"/>
+    <path d="M43 23v36M61 23 43 41l18 18" stroke="#ef4e46" stroke-width="6"/>
+  </g>
+  <path d="M40 8.2v5.4" stroke="#d9ba6c" stroke-width="1.6"/>
+  <path d="m40 79.4 3.2-2-3.2 5-3.2-5 3.2 2Z" fill="#ef4e46"/>
 </svg>
