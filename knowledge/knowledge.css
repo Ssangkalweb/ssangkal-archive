@@ -9,3 +9,62 @@
 @media(min-width:64rem){.knowledge-hero{grid-template-columns:minmax(0,1.25fr) minmax(24rem,.75fr)}.knowledge-heading{grid-template-columns:minmax(0,1.2fr) minmax(18rem,.8fr);align-items:end}.knowledge-heading>p{justify-self:end}.featured-grid{grid-template-columns:repeat(4,1fr)}.featured-card{min-height:34rem}.method-section{grid-template-columns:minmax(0,1.1fr) minmax(22rem,.9fr);gap:clamp(4rem,9vw,9rem)}.knowledge-footer{grid-template-columns:1fr auto 1fr}.knowledge-footer>a:last-child{justify-self:end}}
 @media(max-width:39.99rem){.knowledge-page{font-size:1rem}.knowledge-hero{padding-top:4rem}.knowledge-hero h1{font-size:clamp(3rem,14vw,4.2rem)}.brand-structure{font-size:.9rem}.brand-structure strong{color:#f1f2f2}.knowledge-actions{display:grid}.knowledge-button{width:100%;min-height:3.25rem}.anatomy-visual{width:min(64vw,16rem);opacity:.65}.featured-card{min-height:auto}.featured-meta{flex-wrap:wrap}.featured-summary,.method-copy>p:last-child{font-size:1rem;line-height:1.75}.featured-meta,.knowledge-index,.knowledge-kicker{font-size:.75rem}.series-directory p,.channel-directory p{font-size:.94rem}.archive-return{padding-bottom:3rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/*
+ * 지식해부학 한글 줄바꿈 보완
+ * knowledge/knowledge.css 파일의 맨 아래에 붙여 넣으세요.
+ */
+
+/* 제목은 한국어 단어 중간에서 끊지 않고 줄 길이를 균형 있게 맞춥니다. */
+.knowledge-page :where(h1, h2, h3) {
+  word-break: keep-all;
+  overflow-wrap: normal;
+  text-wrap: balance;
+}
+
+/* 본문은 단어 단위로 자연스럽게 줄바꿈하고 문장 끝의 짧은 외톨이 줄을 줄입니다. */
+.knowledge-page :where(
+  .brand-structure,
+  .knowledge-lead,
+  .knowledge-heading > p,
+  .featured-summary,
+  .series-directory p,
+  .method-copy > p:last-child,
+  .method-list-knowledge p,
+  .channel-directory p,
+  .archive-return h2
+) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+  text-wrap: pretty;
+}
+
+/* 첫 화면의 강조 문장은 별도 행으로 정돈합니다. */
+.knowledge-hero h1 {
+  line-height: 1.06;
+}
+
+.knowledge-hero h1 em {
+  display: block;
+  margin-top: 0.04em;
+}
+
+/* 작은 화면에서는 제목 크기를 조금 줄여 한두 글자만 남는 현상을 방지합니다. */
+@media (max-width: 39.99rem) {
+  .knowledge-hero h1 {
+    max-width: 11ch;
+    font-size: clamp(2.75rem, 12.6vw, 3.75rem);
+    line-height: 1.08;
+    letter-spacing: -0.06em;
+  }
+
+  .knowledge-heading h2,
+  .method-copy h2 {
+    font-size: clamp(2.2rem, 10.5vw, 3.15rem);
+    line-height: 1.12;
+  }
+
+  .featured-card h3 {
+    font-size: clamp(1.65rem, 7.2vw, 2rem);
+    line-height: 1.18;
+  }
+}
