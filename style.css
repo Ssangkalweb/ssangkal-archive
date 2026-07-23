@@ -154,6 +154,7 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .list-heading h2{font-size:clamp(2rem,5vw,3.5rem);letter-spacing:-.04em}
 .collection-list .eyebrow{color:#755e2f}
 .article-card{border-block:2px solid var(--ink)}
+.article-card+.article-card{border-top:0}
 .article-card>a{padding:clamp(1.5rem,4vw,3rem) 0;display:block}
 .article-card>a:hover h3{text-decoration:underline;text-decoration-color:var(--red);text-underline-offset:.3rem}
 .article-card-top,.article-card-meta{display:flex;align-items:center;justify-content:space-between;gap:1rem}
@@ -219,7 +220,9 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .author-mark{width:4.6rem;height:5.06rem;border:0;display:block;background:url("archive-mark.svg") center/contain no-repeat;font-size:0;line-height:0;transform:none;filter:drop-shadow(0 .55rem 1rem rgba(0,0,0,.48)) brightness(1.06)}
 .author-box p:last-child{max-width:42rem;margin-bottom:0;color:var(--muted)}
 .record-navigation{display:grid;gap:1px;background:var(--line)}
-.record-navigation div{padding:1.25rem;background:var(--ink)}
+.record-navigation div,.record-navigation>a{min-height:6.5rem;padding:1.25rem;background:var(--ink);display:flex;flex-direction:column;justify-content:center}
+.record-navigation>a{transition:background .2s ease,color .2s ease}
+.record-navigation>a:hover{background:var(--panel);color:var(--gold)}
 .record-navigation small{display:block;margin-bottom:.45rem;color:var(--gold);font:.62rem/1.4 monospace;letter-spacing:.12em}
 .record-navigation strong{font-size:.85rem}
 .related-links{padding-top:4rem;padding-bottom:4rem}
