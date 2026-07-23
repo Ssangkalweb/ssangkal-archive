@@ -72,8 +72,12 @@
 
   const copyWithFallback = async (text) => {
     if (navigator.clipboard?.writeText) {
-      await navigator.clipboard.writeText(text);
-      return true;
+      try {
+        await navigator.clipboard.writeText(text);
+        return true;
+      } catch {
+        // 브라우저가 클립보드 권한을 제한하면 아래의 호환 복사 방식으로 전환합니다.
+      }
     }
 
     const textarea = document.createElement('textarea');
