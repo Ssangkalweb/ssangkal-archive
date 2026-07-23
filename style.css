@@ -181,6 +181,7 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .longform-article{width:min(100%,var(--content));margin:auto}
 .article-header{padding:clamp(3.5rem,9vw,8rem) var(--gutter);border-bottom:1px solid var(--line);background:var(--navy)}
 .article-header h1{max-width:18ch;margin-bottom:2rem;font-size:clamp(2.35rem,7vw,6.5rem);letter-spacing:-.055em;overflow-wrap:anywhere}
+.article-header h1.title-wide{max-width:22ch}
 .article-deck{max-width:35rem;color:var(--paper);font-size:clamp(1.1rem,2.5vw,1.55rem);line-height:1.7}
 .article-meta{max-width:48rem;margin:3rem 0 0;padding-top:1rem;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}
 .article-meta div{min-width:0}
