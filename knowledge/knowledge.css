@@ -136,6 +136,14 @@
   outline-offset: 3px;
 }
 
+.featured-episode {
+  margin-top: -.25rem;
+  color: var(--accent);
+  font-size: .88rem;
+  font-weight: 800;
+  letter-spacing: .01em;
+}
+
 .featured-media-article {
   background:
     radial-gradient(circle at 72% 48%, transparent 0 17%, #45b98645 17.5% 18%, transparent 18.5% 30%, #45b9862e 30.5% 31%, transparent 31.5%),
