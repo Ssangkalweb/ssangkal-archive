@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 80" role="img" aria-labelledby="title desc">
+  <title id="title">쌍칼 아카이브 SK 방패 마크</title>
+  <desc id="desc">아이보리색 SK 모노그램과 붉은 포인트를 결합한 짙은 남색 방패</desc>
+  <defs>
+    <linearGradient id="shield" x1="10" y1="6" x2="62" y2="70" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#172536"/>
+      <stop offset="0.55" stop-color="#0b1420"/>
+      <stop offset="1" stop-color="#070d15"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="12" y1="12" x2="60" y2="62" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f1ecdf"/>
+      <stop offset="0.55" stop-color="#dbe7e9"/>
+      <stop offset="1" stop-color="#8fb7c8"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M36 2 68 14v29c0 16.2-12.8 28.9-32 35C16.8 71.9 4 59.2 4 43V14L36 2Z" fill="#070d15" stroke="#05090e" stroke-width="3"/>
+  <path d="M36 5.3 64.8 16v26.5c0 13.8-10.6 24.8-28.8 31.1C17.8 67.3 7.2 56.3 7.2 42.5V16L36 5.3Z" fill="url(#shield)" stroke="url(#edge)" stroke-width="2.2"/>
+  <path d="M36 10.2 59.5 19v22.8c0 10.7-8 19.6-23.5 25.6-15.5-6-23.5-14.9-23.5-25.6V19L36 10.2Z" fill="none" stroke="#9bb7c2" stroke-opacity=".4" stroke-width="1"/>
+
+  <path d="M52.8 15.9 61.5 19v22.6c0 10.4-6.1 18.7-16.9 24.7l-3-4.4c9.4-5.3 14.6-12.1 14.6-20.7V21.5l-6.1-2.3 2.7-3.3Z" fill="#d94a40" opacity=".92"/>
+
+  <path d="M32.1 20.2H20.3l-5.5 5.2v9.1l14.4 6.3v8.1l-2.7 2.7H14.6" fill="none" stroke="#f1ecdf" stroke-width="5.2" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M38.2 19.8v33.6M58.1 20.3 38.2 38l20.5 16.1" fill="none" stroke="#d94a40" stroke-width="7.2" stroke-linecap="square" stroke-linejoin="miter" opacity=".95"/>
+  <path d="M36.6 18.7v35.7M56.5 19.8 36.6 38l20.5 16.4" fill="none" stroke="#f1ecdf" stroke-width="5.2" stroke-linecap="square" stroke-linejoin="miter"/>
+
+  <path d="M36 6.2v6.1" stroke="#f1ecdf" stroke-width="1.2" opacity=".65"/>
+  <path d="m63.6 12.8 3.6 3.6-3.6 3.6-3.6-3.6 3.6-3.6Z" fill="#d94a40" stroke="#f1ecdf" stroke-width=".8"/>
+</svg>
