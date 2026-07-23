@@ -3,186 +3,184 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>쌍칼 아카이브 | 삶을 기록하고, 세상을 해부하고, 이야기를 만듭니다</title>
-  <meta name="description" content="산재와 회복, 지식 콘텐츠, 웹소설 창작, AI와 웹 개발 도전을 기록하는 쌍칼의 개인 미디어 아카이브입니다.">
-  <link rel="canonical" href="https://ssangkalweb.github.io/ssangkal-archive/">
-  <meta property="og:type" content="profile">
+  <title>지식해부학 | 쌍칼 콘텐츠 스튜디오</title>
+  <meta name="description" content="세계·역사·성경·스포츠·사회 이슈를 짧고 강하게 해부하는 쌍칼 콘텐츠 스튜디오의 지식 콘텐츠 허브입니다.">
+  <link rel="canonical" href="https://ssangkalweb.github.io/ssangkal-archive/knowledge/">
+  <meta property="og:type" content="website">
   <meta property="og:locale" content="ko_KR">
   <meta property="og:site_name" content="쌍칼 아카이브">
-  <meta property="og:title" content="쌍칼 아카이브">
-  <meta property="og:description" content="삶을 기록하고, 세상을 해부하고, 이야기를 만듭니다.">
-  <meta property="og:url" content="https://ssangkalweb.github.io/ssangkal-archive/">
-  <meta name="theme-color" content="#0a111b">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+  <meta property="og:title" content="지식해부학 | 우리는 반만 알고 있다">
+  <meta property="og:description" content="세계·역사·성경·스포츠와 사회 이슈의 표면 아래를 해부합니다.">
+  <meta property="og:url" content="https://ssangkalweb.github.io/ssangkal-archive/knowledge/">
+  <meta name="theme-color" content="#080d14">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="knowledge.css">
+  <script defer src="../script.js"></script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ProfilePage",
-    "url": "https://ssangkalweb.github.io/ssangkal-archive/",
-    "name": "쌍칼 아카이브",
-    "description": "삶과 회복, 지식, 창작, 새로운 기술 도전을 기록하는 개인 미디어 아카이브",
-    "mainEntity": {
-      "@type": "Person",
-      "name": "쌍칼",
-      "alternateName": "Ssangkal",
+    "@type": "CollectionPage",
+    "name": "지식해부학",
+    "url": "https://ssangkalweb.github.io/ssangkal-archive/knowledge/",
+    "description": "세계·역사·성경·스포츠·사회 이슈를 질문 중심으로 해부하는 콘텐츠 허브",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "쌍칼 아카이브",
       "url": "https://ssangkalweb.github.io/ssangkal-archive/"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "세계해부학"},
+        {"@type": "ListItem", "position": 2, "name": "역사해부학"},
+        {"@type": "ListItem", "position": 3, "name": "성경해부학"},
+        {"@type": "ListItem", "position": 4, "name": "스포츠해부학"},
+        {"@type": "ListItem", "position": 5, "name": "경제·산재 콘텐츠"},
+        {"@type": "ListItem", "position": 6, "name": "웹소설·창작"}
+      ]
     }
   }
   </script>
 </head>
-<body>
+<body class="knowledge-page">
   <a class="skip-link" href="#main-content">본문으로 바로가기</a>
 
   <header class="site-header" data-header>
     <div class="header-inner">
-      <a class="brand" href="#top" aria-label="쌍칼 아카이브 홈">
+      <a class="brand" href="../" aria-label="쌍칼 아카이브로 돌아가기">
         <span class="brand-mark" aria-hidden="true"><span>SK</span></span>
-        <span class="brand-name"><strong>SSANGKAL ARCHIVE</strong><small>쌍칼 아카이브</small></span>
+        <span class="brand-name"><strong>SSANGKAL CONTENT STUDIO</strong><small>지식해부학 콘텐츠 허브</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="주 메뉴 열기">
         <span aria-hidden="true"></span><span aria-hidden="true"></span>
       </button>
       <nav class="primary-nav" id="primary-navigation" aria-label="주 메뉴">
-        <a href="#top">홈</a>
-        <a href="#life">삶의 기록</a>
-        <a href="#knowledge">지식해부학</a>
-        <a href="#fiction">웹소설</a>
-        <a href="#build">다시 만드는 삶</a>
-        <a href="#square">쌍칼 광장</a>
-        <a href="#about">소개</a>
+        <a href="#featured">대표 콘텐츠</a>
+        <a href="#all-series">전체 시리즈</a>
+        <a href="#method">제작 원칙</a>
+        <a href="#channels">채널 연결</a>
+        <a href="../">쌍칼 아카이브</a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
-    <section class="hero" id="top" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="editorial-label" aria-label="개인 미디어 아카이브, 2026년 설립, 대한민국 인천">
-          <span>PERSONAL MEDIA ARCHIVE</span><span>EST. 2026</span><span>INCHEON · KOREA</span>
+    <section class="knowledge-hero" id="top" aria-labelledby="hero-title">
+      <div class="knowledge-hero-grid" aria-hidden="true"></div>
+      <div class="knowledge-hero-copy">
+        <p class="knowledge-kicker"><span aria-hidden="true"></span> KNOWLEDGE ANATOMY</p>
+        <p class="brand-structure">지식해부학은 세계·역사·성경·스포츠와 사회 이슈를 질문 중심으로 해부하는 <strong>쌍칼 콘텐츠 스튜디오의 대표 브랜드</strong>입니다.</p>
+        <h1 id="hero-title">반만 알고 있던 세상,<br><em>끝까지 해부합니다.</em></h1>
+        <p class="knowledge-lead">쌍칼 콘텐츠 스튜디오는 <strong>지식해부학</strong>을 중심으로 세계·역사·성경·스포츠와 사회 이슈를 해부하는 콘텐츠를 제작합니다.</p>
+        <div class="knowledge-actions">
+          <a class="knowledge-button knowledge-button-primary" href="#featured">대표 콘텐츠 보기 <span aria-hidden="true">↓</span></a>
+          <a class="knowledge-button knowledge-button-secondary" href="https://www.youtube.com/@kboanatomy" target="_blank" rel="noopener noreferrer">유튜브 채널 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭에서 열림)</span></a>
         </div>
-        <p class="issue-number" aria-hidden="true">ARCHIVE / VOL. 01</p>
-        <h1 id="hero-title">사고는 나를 멈췄지만,<br><em>기록은 다시 나를 움직였다.</em></h1>
-        <p class="hero-lead">산재와 회복의 기록,<br>세상을 해부하는 지식 콘텐츠,<br>전쟁과 인간을 그리는 웹소설,<br>그리고 새로운 생업을 만드는 웹 개발 도전.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#archive">기록 둘러보기 <span aria-hidden="true">↘</span></a>
-          <a class="button button-secondary" href="#square">쌍칼 광장 보기</a>
-        </div>
-        <p class="trust-note">실제 경험. 직접 만든 콘텐츠.<br>공개할 수 있는 기록만 다룹니다.</p>
       </div>
 
-      <aside class="index-board" aria-label="아카이브 분류 색인">
-        <div class="board-head"><span>MASTER INDEX</span><span>4 RECORDS</span></div>
-        <p class="board-status"><span aria-hidden="true"></span> CURRENT: ALL ARCHIVES</p>
-        <ol>
-          <li class="is-active"><a href="#life"><span class="board-number">01</span><span><strong>RECOVERY</strong><small>산재와 회복</small></span><span aria-hidden="true">→</span></a></li>
-          <li><a href="#knowledge"><span class="board-number">02</span><span><strong>KNOWLEDGE</strong><small>세상의 해부</small></span><span aria-hidden="true">→</span></a></li>
-          <li><a href="#fiction"><span class="board-number">03</span><span><strong>FICTION</strong><small>웹소설과 창작</small></span><span aria-hidden="true">→</span></a></li>
-          <li><a href="#build"><span class="board-number">04</span><span><strong>BUILD</strong><small>AI와 웹 제작</small></span><span aria-hidden="true">→</span></a></li>
-        </ol>
-        <div class="board-foot" aria-hidden="true"><span>SSANGKAL / 2026</span><span class="registration-mark">SK—A</span></div>
-      </aside>
-      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="anatomy-visual" role="img" aria-label="사실에서 구조를 거쳐 질문으로 이어지는 지식해부학의 콘텐츠 방식">
+        <div class="anatomy-rings" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="anatomy-core"><strong>WHY?</strong><small>표면 아래의 이유</small></div>
+        <p>FACT <i>→</i> STRUCTURE <i>→</i> QUESTION</p>
+      </div>
+
+      <div class="hero-principles" aria-label="핵심 제작 원칙"><span>50초 압축</span><span>첫 3초 훅</span><span>팩트 기반</span><span>토론의 장</span></div>
     </section>
 
-    <section class="archive-portal section-shell" id="archive" aria-labelledby="archive-title">
-      <div class="section-heading">
-        <p class="eyebrow">ARCHIVE PORTAL <span>01—04</span></p>
-        <h2 id="archive-title">한 사람의 삶에서<br>네 개의 기록이 시작됐습니다.</h2>
-        <p>완성된 성공담이 아닌, 멈춘 삶을 기록과 창작으로 다시 움직이는 과정입니다.</p>
+    <section class="knowledge-section featured-section" id="featured" aria-labelledby="featured-title">
+      <div class="knowledge-heading">
+        <div><p class="knowledge-index">01 / FEATURED CONTENT</p><h2 id="featured-title">대표 콘텐츠부터<br>바로 둘러보세요.</h2></div>
+        <p>각 시리즈의 관점을 가장 선명하게 보여주는 대표 주제를 모았습니다.</p>
       </div>
-      <div class="portal-grid">
-        <article class="portal-card">
-          <div class="card-meta"><span>01</span><span class="status status-red">PUBLISHED</span></div>
-          <h3>삶의 기록</h3>
-          <p>사고 이후의 치료와 재활, 산재 절차와 다시 일어서기까지의 개인 기록.</p>
-          <a href="./life/">기록 분류 보기 <span aria-hidden="true">→</span></a>
+
+      <div class="featured-grid">
+        <article class="featured-card accent-red">
+          <div class="featured-meta"><span>01 · WORLD</span><span>세계해부학</span></div>
+          <div class="featured-symbol" aria-hidden="true"><span></span></div>
+          <p class="featured-label">대표 콘텐츠</p>
+          <h3>KF-21 보라매,<br>한국 전투기 시대가 열렸다</h3>
+          <p class="featured-summary">전투용 적합 판정을 받은 KF-21이 한국 항공전력과 방위산업에 어떤 변화를 여는지 살펴봅니다.</p>
+          <a href="https://www.youtube.com/shorts/DoZoUiLfNXg" target="_blank" rel="noopener noreferrer" aria-label="KF-21 보라매 전투용 적합 판정, 한국 전투기 시대가 열렸다 대표 영상 보기">대표 영상 보기 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭에서 열림)</span></a>
         </article>
-        <article class="portal-card">
-          <div class="card-meta"><span>02</span><span class="status status-red">PUBLISHED</span></div>
-          <h3>지식해부학</h3>
-          <p>세계, 역사, 성경, 스포츠와 경제를 우리가 반만 알고 있던 관점에서 다시 해부합니다.</p>
-          <a href="./knowledge/">지식해부학 허브 보기 <span aria-hidden="true">→</span></a>
+
+        <article class="featured-card accent-blue">
+          <div class="featured-meta"><span>02 · HISTORY</span><span>역사해부학</span></div>
+          <div class="featured-symbol" aria-hidden="true"><span></span></div>
+          <p class="featured-label">대표 콘텐츠</p>
+          <h3>1분이 나라를 기억한다<br>현충일의 진짜 의미</h3>
+          <p class="featured-summary">현충일의 1분 묵념이 무엇을 기억하고, 오늘의 우리에게 어떤 의미를 남기는지 되짚습니다.</p>
+          <a href="https://www.youtube.com/shorts/umO1FQT33yM" target="_blank" rel="noopener noreferrer" aria-label="1분이 나라를 기억한다, 현충일의 진짜 의미 대표 영상 보기">대표 영상 보기 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭에서 열림)</span></a>
         </article>
-        <article class="portal-card">
-          <div class="card-meta"><span>03</span><span class="status">WRITING</span></div>
-          <h3>웹소설 서재</h3>
-          <p>전쟁과 인간, 권력과 생존을 다루는 작품과 세계관, 창작 과정의 기록.</p>
-          <a href="#fiction">기록 분류 보기 <span aria-hidden="true">→</span></a>
+
+        <article class="featured-card accent-gold">
+          <div class="featured-meta"><span>03 · BIBLE</span><span>성경해부학</span></div>
+          <div class="featured-symbol" aria-hidden="true"><span></span></div>
+          <p class="featured-label">대표 콘텐츠</p>
+          <h3>아브라함은 왜<br>이삭을 내려놓아야 했나</h3>
+          <p class="featured-summary">모리아 산의 시험을 통해 믿음과 순종, 그리고 내려놓음의 의미를 다시 질문합니다.</p>
+          <a href="https://www.youtube.com/shorts/vkYYRj_4jUI" target="_blank" rel="noopener noreferrer" aria-label="아브라함은 왜 이삭을 내려놓아야 했나, 모리아 산의 시험 대표 영상 보기">대표 영상 보기 <span aria-hidden="true">↗</span><span class="sr-only">(새 탭에서 열림)</span></a>
         </article>
-        <article class="portal-card">
-          <div class="card-meta"><span>04</span><span class="status">BUILDING</span></div>
-          <h3>다시 만드는 삶</h3>
-          <p>AI, Codex와 웹 개발을 배우며 새로운 기술과 생업을 만드는 과정.</p>
-          <a href="#build">기록 분류 보기 <span aria-hidden="true">→</span></a>
+
+        <article class="featured-card accent-green">
+          <div class="featured-meta"><span>04 · REAL LIFE</span><span>슬기로운 산재생활</span></div>
+          <div class="featured-symbol" aria-hidden="true"><span></span></div>
+          <p class="featured-label">대표 콘텐츠</p>
+          <h3>산재가 끝났다고,<br>회복까지 끝난 건 아니었다</h3>
+          <p class="featured-summary">서류 위의 종결과 몸이 느끼는 회복이 왜 같은 날 오지 않는지 기록합니다.</p>
+          <a href="../life/workers-compensation-aftercare.html">대표 기록 읽기 <span aria-hidden="true">→</span></a>
         </article>
       </div>
     </section>
 
-    <section class="records section-shell" aria-label="아카이브 준비 현황">
-      <article class="record-panel" id="life">
-        <div class="record-index" aria-hidden="true">A—01</div>
-        <div class="record-content">
-          <p class="eyebrow">LIFE RECORD · RECOVERY</p>
-          <h2>삶의 기록</h2>
-          <p>사고 이후 치료와 재활, 산재 확인 과정과 다시 일상을 세우는 경험을 공개 가능한 범위에서 기록합니다.</p>
-          <div class="home-article-preview"><span>L-001</span><h3>산재가 끝났다고,<br>회복까지 끝난 건 아니었다</h3><p>서류 위의 끝과 몸이 느끼는 끝은<br>같은 날 오지 않았습니다.</p><div><time datetime="2026-07-22">2026.07.22</time><span>약 6분</span></div><a class="button button-secondary" href="./life/workers-compensation-aftercare.html">첫 기록 읽기 <span aria-hidden="true">→</span></a></div>
-        </div>
-        <div class="record-state"><span class="status status-red">PUBLISHED</span><strong>첫 기록 공개</strong><small>DOCUMENTS / 001</small></div>
-      </article>
-
-      <article class="record-panel" id="knowledge">
-        <div class="record-index" aria-hidden="true">A—02</div>
-        <div class="record-content"><p class="eyebrow">KNOWLEDGE ANATOMY</p><h2>지식해부학</h2><p>세계, 역사, 성경, 스포츠와 경제를 익숙한 결론이 아닌 질문과 근거의 관점에서 다시 살펴봅니다.</p><div class="home-article-preview"><span>K-001</span><h3>반만 알고 있던 세상,<br>끝까지 해부합니다</h3><p>대표 시리즈와 실제 채널을 한곳에서<br>바로 둘러볼 수 있습니다.</p><a class="button button-secondary" href="./knowledge/">지식해부학 허브 열기 <span aria-hidden="true">→</span></a></div></div>
-        <div class="record-state"><span class="status status-red">PUBLISHED</span><strong>콘텐츠 허브 공개</strong><small>SERIES / 006</small></div>
-      </article>
-
-      <article class="record-panel" id="fiction">
-        <div class="record-index" aria-hidden="true">A—03</div>
-        <div class="record-content"><p class="eyebrow">FICTION LIBRARY</p><h2>웹소설 서재</h2><p>전쟁과 인간, 권력과 생존을 다루는 작품의 세계관과 창작 과정을 차분히 쌓아갑니다.</p></div>
-        <div class="record-state"><span class="status">WRITING</span><strong>콘텐츠 준비 중</strong><small>DOCUMENTS / 000</small></div>
-      </article>
-
-      <article class="record-panel" id="build">
-        <div class="record-index" aria-hidden="true">A—04</div>
-        <div class="record-content"><p class="eyebrow">LIFE, REBUILT</p><h2>다시 만드는 삶</h2><p>AI와 Codex, 웹 개발을 배우고 직접 만들며 새로운 기술과 생업의 가능성을 기록합니다.</p></div>
-        <div class="record-state"><span class="status">BUILDING</span><strong>콘텐츠 준비 중</strong><small>DOCUMENTS / 000</small></div>
-      </article>
+    <section class="knowledge-section all-series-section" id="all-series" aria-labelledby="series-title">
+      <div class="knowledge-heading compact-heading">
+        <div><p class="knowledge-index">02 / ALL SERIES</p><h2 id="series-title">지식에서 창작까지,<br>전체 시리즈.</h2></div>
+        <p>세계·역사·성경·스포츠부터 경제·산재·창작까지 전체 시리즈를 살펴보세요.</p>
+      </div>
+      <ol class="series-directory">
+        <li><span>01</span><div><small>WORLD</small><h3>세계해부학</h3><p>국제정세 · 경제 · 지정학</p></div></li>
+        <li><span>02</span><div><small>HISTORY</small><h3>역사해부학</h3><p>사건 · 인물 · 숨은 맥락</p></div></li>
+        <li><span>03</span><div><small>BIBLE</small><h3>성경해부학</h3><p>본문 · 인물 · 인간의 선택</p></div></li>
+        <li><span>04</span><div><small>SPORTS</small><h3>스포츠해부학</h3><p>축구 · 야구 · 시스템</p></div></li>
+        <li><span>05</span><div><small>ECONOMY &amp; LIFE</small><h3>경제·산재 콘텐츠</h3><p>산업 · 노동 · 보상 · 회복</p></div></li>
+        <li><span>06</span><div><small>FICTION</small><h3>웹소설·창작</h3><p>전쟁 · 물류 · 생존 · 세계관</p></div></li>
+      </ol>
     </section>
 
-    <section class="square section-shell" id="square" aria-labelledby="square-title">
-      <div class="square-code" aria-hidden="true"><span>COMMUNITY</span><strong>01</strong></div>
-      <div class="square-copy">
-        <p class="eyebrow">SSANGKAL SQUARE · PHASE 01</p>
-        <h2 id="square-title">사람들이 읽고,<br>묻고,<br>자기 이야기를 남기는 곳.</h2>
-        <p>1.0에서는 주제 제안과 의견을 남기는 대화의 입구로 시작합니다. 회원 커뮤니티와 자유게시판은 운영 기반을 만든 뒤 확장합니다.</p>
+    <section class="method-section" id="method" aria-labelledby="method-title">
+      <div class="method-copy">
+        <p class="knowledge-index">03 / OUR METHOD</p>
+        <h2 id="method-title">어려운 말은 덜어내고,<br><em>핵심은 더 날카롭게.</em></h2>
+        <p>정보만 나열하지 않습니다. 강한 질문으로 시선을 붙잡고 사건의 구조를 보여준 뒤, 시청자가 자기 생각을 남길 수 있는 지점까지 안내합니다.</p>
       </div>
-      <div class="square-state"><span aria-hidden="true">●</span><strong>COMMUNITY · PHASE 01</strong><p>준비 중</p></div>
+      <ol class="method-list-knowledge">
+        <li><span>01</span><div><strong>3초 안에 질문한다</strong><p>익숙한 상식을 뒤집는 한 문장으로 시작합니다.</p></div></li>
+        <li><span>02</span><div><strong>숫자 뒤의 구조를 본다</strong><p>누가, 왜, 어떤 선택을 했는지 연결합니다.</p></div></li>
+        <li><span>03</span><div><strong>정답보다 토론을 남긴다</strong><p>영상이 끝난 뒤에도 생각이 이어지게 만듭니다.</p></div></li>
+      </ol>
     </section>
 
-    <section class="about section-shell" id="about" aria-labelledby="about-title">
-      <div class="about-label"><p class="eyebrow">ABOUT THE ARCHIVIST</p><span aria-hidden="true">SK / PROFILE</span></div>
-      <div class="about-copy">
-        <h2 id="about-title">멈춘 자리에서<br>다른 길을 만드는 중입니다.</h2>
-        <p>현장의 경험과 사고 이후의 회복을 지나, 콘텐츠를 만들고 웹소설을 쓰며 AI와 웹 개발이라는 새로운 도전을 이어갑니다.</p>
-        <p>여기는 그 과정에서 직접 확인하고 만들고 배운 것을, 공개할 수 있는 범위 안에서 오래 남기는 개인 기록실입니다.</p>
+    <section class="knowledge-section channels-section-knowledge" id="channels" aria-labelledby="channels-title">
+      <div class="knowledge-heading compact-heading">
+        <div><p class="knowledge-index">04 / CHANNELS</p><h2 id="channels-title">보고, 읽고,<br>이야기로 이어집니다.</h2></div>
+        <p>영상, 기록과 웹소설로 이어지는 쌍칼의 공식 콘텐츠 채널을 모았습니다.</p>
       </div>
-      <div class="about-state"><span class="status">ARCHIVING</span><strong>소개 기록 준비 중</strong><small>PROFILE / 2026</small></div>
+      <div class="channel-directory">
+        <a href="https://www.youtube.com/@kboanatomy" target="_blank" rel="noopener noreferrer"><span class="channel-icon" aria-hidden="true">▶</span><div><small>YOUTUBE</small><strong>쌍칼 유튜브 채널</strong><p>영상으로 보는 지식해부학</p></div><i aria-hidden="true">↗</i><span class="sr-only">(새 탭에서 열림)</span></a>
+        <a href="https://www.youtube.com/@worldhaeburhak" target="_blank" rel="noopener noreferrer"><span class="channel-icon" aria-hidden="true">◎</span><div><small>WORLD ANATOMY</small><strong>세계해부학 채널</strong><p>세계·역사·성경 콘텐츠</p></div><i aria-hidden="true">↗</i><span class="sr-only">(새 탭에서 열림)</span></a>
+        <a href="https://ssangkal.tistory.com/" target="_blank" rel="noopener noreferrer"><span class="channel-icon" aria-hidden="true">T</span><div><small>BLOG</small><strong>산재·회복 블로그</strong><p>근거와 경험을 더 깊게 읽는 글</p></div><i aria-hidden="true">↗</i><span class="sr-only">(새 탭에서 열림)</span></a>
+        <a href="https://library.munpia.com/OK2RFuVqomnbaxdqtLg1/novel/detail?novelId=570424" target="_blank" rel="noopener noreferrer"><span class="channel-icon" aria-hidden="true">M</span><div><small>MUNPIA</small><strong>문피아 서재</strong><p>쌍칼의 웹소설과 창작 세계</p></div><i aria-hidden="true">↗</i><span class="sr-only">(새 탭에서 열림)</span></a>
+        <a href="https://novel.naver.com/search?keyword=ssangkal" target="_blank" rel="noopener noreferrer"><span class="channel-icon" aria-hidden="true">N</span><div><small>NAVER NOVEL</small><strong>네이버 웹소설 검색</strong><p>쌍칼 작품 검색 결과로 이동</p></div><i aria-hidden="true">↗</i><span class="sr-only">(새 탭에서 열림)</span></a>
+      </div>
+      <div class="archive-return"><p>SSANGKAL ARCHIVE</p><h2>콘텐츠를 봤다면,<br>이제 사람과 기록을 만나보세요.</h2><a href="../">쌍칼 아카이브로 돌아가기 <span aria-hidden="true">→</span></a></div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-primary">
-      <div><strong>SSANGKAL ARCHIVE</strong><p>삶을 기록하고,<br>세상을 해부하고,<br>이야기를 만듭니다.</p></div>
-      <nav aria-label="하단 메뉴">
-        <a href="#build">쌍칼 웹 스튜디오 <small>관련 기록</small></a>
-        <a href="./knowledge/">지식해부학 <small>콘텐츠 허브</small></a>
-        <a href="#fiction">웹소설 <small>준비 중</small></a>
-        <span class="footer-link" aria-label="문의, 연결 준비 중">문의 <small>연결 준비 중</small></span>
-      </nav>
-    </div>
-    <div class="footer-bottom"><span>© <span id="current-year">2026</span> SSANGKAL ARCHIVE</span><span>PERSONAL MEDIA / INCHEON</span></div>
+  <footer class="knowledge-footer">
+    <a class="brand" href="../"><span class="brand-mark" aria-hidden="true"><span>SK</span></span><span class="brand-name"><strong>SSANGKAL CONTENT STUDIO</strong><small>쌍칼 아카이브의 지식 콘텐츠 허브</small></span></a>
+    <p>© <span id="current-year">2026</span> SSANGKAL CONTENT STUDIO</p>
+    <a href="#top">맨 위로 ↑</a>
   </footer>
 </body>
 </html>
