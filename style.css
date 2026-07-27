@@ -154,6 +154,8 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .service-card dl div{padding:.4rem 0;display:flex;justify-content:space-between;gap:1rem;font-size:.73rem}
 .service-card dt{color:#7f8992}
 .service-card dd{margin:0;color:var(--paper);font-weight:750}
+.service-inquiry{min-height:2.8rem;margin-top:1rem;padding:.65rem .8rem;border:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;color:var(--paper);font-size:.76rem;font-weight:750}
+.service-inquiry:hover{border-color:var(--gold);color:var(--gold)}
 .service-boundary{padding:1.4rem;border:1px solid var(--line);border-top:0;background:#080d14}
 .service-boundary p{margin:0;color:var(--muted);font-size:.8rem}
 .service-boundary p strong{color:var(--paper)}
@@ -166,7 +168,13 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .service-preflight li>span{padding-top:.25rem;color:var(--red);font:700 .62rem/1 monospace}
 .service-preflight li p{margin:0;color:var(--muted);font-size:.75rem}
 .service-preflight li strong{display:block;margin-bottom:.15rem;color:var(--paper);font-size:.84rem}
-.service-contact-note{margin:1.3rem 0 0;padding-left:.8rem;border-left:2px solid var(--gold);color:#9ba4ac;font-size:.7rem}
+.service-contact{grid-column:1/-1;margin-top:.5rem;padding:1.4rem;border:1px solid var(--gold);display:grid;gap:1.5rem;background:#bca36b0a}
+.service-contact h4{max-width:24ch;margin:0 0 .8rem;font-size:clamp(1.25rem,3vw,1.85rem)}
+.service-contact>div>p:last-child{max-width:37rem;margin:0;color:var(--muted);font-size:.76rem}
+.service-contact-action{align-self:end}
+.service-contact-action a{min-height:3.25rem;padding:.8rem 1rem;display:flex;align-items:center;justify-content:space-between;gap:1rem;background:var(--paper);color:var(--ink);font-size:.8rem;font-weight:800}
+.service-contact-action a:hover{background:var(--white)}
+.service-contact-action>span{margin-top:.65rem;display:block;color:#8f99a2;font:600 .65rem/1.5 monospace;overflow-wrap:anywhere}
 
 .square{position:relative;border-block:1px solid var(--line);display:grid;gap:2rem;overflow:hidden;background:#10171f}
 .square:after{content:"";position:absolute;right:-6rem;bottom:-9rem;width:18rem;height:18rem;border:1px solid var(--line);border-radius:50%;box-shadow:0 0 0 3rem #34404b29,0 0 0 6rem #34404b1a;pointer-events:none}
@@ -330,7 +338,7 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .service-card+.service-card{border-top:0;border-left:1px solid var(--line)}
 .service-preflight{display:grid;grid-template-columns:minmax(14rem,.7fr) minmax(0,1.3fr);gap:2rem;align-items:start}
 .service-preflight ol{margin:0;border-top:0}
-.service-contact-note{grid-column:1/-1}
+.service-contact{grid-template-columns:minmax(0,1.15fr) minmax(17rem,.85fr);align-items:end}
 .square{grid-template-columns:8rem minmax(0,1fr) 14rem}
 .about{grid-template-columns:10rem minmax(0,1fr) 12rem}
 .footer-primary{grid-template-columns:1.2fr .8fr}
