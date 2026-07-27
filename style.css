@@ -133,6 +133,40 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .studio-scope{margin:1.5rem 0 0;display:flex;flex-wrap:wrap;gap:.5rem}
 .studio-scope strong,.studio-scope span{min-height:2rem;padding:.4rem .65rem;border:1px solid var(--line);display:inline-flex;align-items:center;font-size:.66rem}
 .studio-scope strong{border-color:var(--gold);color:var(--gold);letter-spacing:.1em}
+.studio-services{margin-top:3.5rem;padding-top:3rem;border-top:1px solid var(--line)}
+.studio-services-heading{margin-bottom:2rem;display:grid;gap:1rem}
+.studio-services-heading h3{max-width:22ch;margin:0;font-size:clamp(1.65rem,4vw,2.8rem);letter-spacing:-.04em}
+.studio-services-heading>p{max-width:34rem;margin:0;color:var(--muted);font-size:.88rem}
+.service-grid{display:grid;border:1px solid var(--line)}
+.service-card{min-width:0;padding:1.4rem;display:flex;flex-direction:column;background:#0c141e}
+.service-card+.service-card{border-top:1px solid var(--line)}
+.service-card-featured{background:linear-gradient(155deg,#141c26,#0c141e)}
+.service-card-head{margin-bottom:2.5rem;display:flex;align-items:center;justify-content:space-between;color:var(--gold);font:700 .62rem/1 monospace;letter-spacing:.12em}
+.service-card-featured .service-card-head span:last-child{color:#f07169}
+.service-kicker{margin:0 0 .5rem;color:var(--gold);font-size:.7rem;font-weight:750}
+.service-card h4{margin:0 0 1rem;font-size:clamp(1.35rem,3vw,1.8rem);letter-spacing:-.025em}
+.service-fit{min-height:6.2rem;margin:0;color:#c6ccd0;font-size:.86rem;line-height:1.75}
+.service-card ul{margin:1.2rem 0;padding:0;list-style:none;color:var(--muted);font-size:.78rem}
+.service-card li{position:relative;padding:.45rem 0 .45rem 1rem;border-top:1px solid var(--soft)}
+.service-card li:before{content:"";position:absolute;top:1rem;left:0;width:.32rem;height:.32rem;background:var(--red)}
+.service-card li:last-child{border-bottom:1px solid var(--soft)}
+.service-card dl{margin:auto 0 0;padding-top:1.2rem}
+.service-card dl div{padding:.4rem 0;display:flex;justify-content:space-between;gap:1rem;font-size:.73rem}
+.service-card dt{color:#7f8992}
+.service-card dd{margin:0;color:var(--paper);font-weight:750}
+.service-boundary{padding:1.4rem;border:1px solid var(--line);border-top:0;background:#080d14}
+.service-boundary p{margin:0;color:var(--muted);font-size:.8rem}
+.service-boundary p strong{color:var(--paper)}
+.service-boundary ul{margin:1rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:.45rem;list-style:none}
+.service-boundary li{padding:.35rem .55rem;border:1px solid var(--soft);color:#9099a1;font-size:.65rem}
+.service-preflight{margin-top:2rem;padding:1.5rem;border:1px solid var(--line);background:linear-gradient(135deg,#111a24,#080d14)}
+.service-preflight h4{max-width:20ch;margin:0;font-size:clamp(1.35rem,3vw,2rem);letter-spacing:-.03em}
+.service-preflight ol{margin:1.5rem 0 0;padding:0;border-top:1px solid var(--line);list-style:none}
+.service-preflight li{padding:1rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:2rem 1fr;gap:.75rem}
+.service-preflight li>span{padding-top:.25rem;color:var(--red);font:700 .62rem/1 monospace}
+.service-preflight li p{margin:0;color:var(--muted);font-size:.75rem}
+.service-preflight li strong{display:block;margin-bottom:.15rem;color:var(--paper);font-size:.84rem}
+.service-contact-note{margin:1.3rem 0 0;padding-left:.8rem;border-left:2px solid var(--gold);color:#9ba4ac;font-size:.7rem}
 
 .square{position:relative;border-block:1px solid var(--line);display:grid;gap:2rem;overflow:hidden;background:#10171f}
 .square:after{content:"";position:absolute;right:-6rem;bottom:-9rem;width:18rem;height:18rem;border:1px solid var(--line);border-radius:50%;box-shadow:0 0 0 3rem #34404b29,0 0 0 6rem #34404b1a;pointer-events:none}
@@ -291,6 +325,12 @@ h1,h2,h3{line-height:1.16;text-wrap:balance}
 .studio-process{grid-template-columns:repeat(3,minmax(0,1fr))}
 .studio-process li{padding:1.25rem}
 .studio-process li+li{border-top:0;border-left:1px solid var(--line)}
+.studio-services-heading{grid-template-columns:minmax(0,1.2fr) minmax(18rem,.8fr);align-items:end}
+.service-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.service-card+.service-card{border-top:0;border-left:1px solid var(--line)}
+.service-preflight{display:grid;grid-template-columns:minmax(14rem,.7fr) minmax(0,1.3fr);gap:2rem;align-items:start}
+.service-preflight ol{margin:0;border-top:0}
+.service-contact-note{grid-column:1/-1}
 .square{grid-template-columns:8rem minmax(0,1fr) 14rem}
 .about{grid-template-columns:10rem minmax(0,1fr) 12rem}
 .footer-primary{grid-template-columns:1.2fr .8fr}
